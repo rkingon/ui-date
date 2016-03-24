@@ -28,6 +28,11 @@
           The required date field is required.
         </div>
       </div>
+      
+      <div class="field">
+        Date Range: <input type="text" name="date3" required  ui-date="" ui-date-max="rangeDate.end" ng-model="rangeDate.start"> to <input type="text" name="date4" required  ui-date="" ui-date-min="rangeDate.start" ng-model="rangeDate.end">
+      </div>
+      
     </form>
 
   </div>
