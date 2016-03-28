@@ -268,26 +268,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	      });
 	    }
 	  };
-	}]).directive('uiDateMin', [function () {
-	  return {
-	    link: function link(scope, element, attrs) {
-	      // Listen to the opposing model for changes
-	      scope.$watch(attrs.uiDateMin, function (date) {
-	        return element.datepicker('option', 'minDate', date);
-	      });
-	      return;
-	    }
-	  };
-	}]).directive('uiDateMax', [function () {
-	  return {
-	    link: function link(scope, element, attrs) {
-	      // Listen to the opposing model for changes
-	      scope.$watch(attrs.uiDateMax, function (date) {
-	        return element.datepicker('option', 'maxDate', date);
-	      });
-	      return;
-	    }
-	  };
 	}]);
 
 /***/ },
